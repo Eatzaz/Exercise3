@@ -78,10 +78,18 @@ public class Main {
 //should then output a message indicating whether the number is a prime
 //number.
 
-        System.out.println("enter your even number:");
-        int evennumber = data.nextInt();
-        if(evennumber%2==0){
-            System.out.println("the number is a prime");
+       System.out.println("enter len of num");
+             int nums= input.nextInt();
+        for(int i=0;i<nums;i++){
+            System.out.println("enter numbers");
+            int number= input.nextInt();
+            if(number<=1){
+                System.out.println("Please enter number greater than 1");}
+               else if(number%2==0){
+                    System.out.println("its not a prime");
+                }else{
+                    System.out.println(" its a prime");
+                }
         }
         //7.Use a for loop to print headings for four weeks (Weeks 1 - 4). Then use
         //another for loop to print the days (Days 1 -7) for each week.
